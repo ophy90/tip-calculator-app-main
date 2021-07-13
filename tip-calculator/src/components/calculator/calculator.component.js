@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-import './calculator.styles.sass';
+import './calculator.styles.scss';
 
 const Calculator = (props) => {
     const [bill, setBill] = useState(0);
