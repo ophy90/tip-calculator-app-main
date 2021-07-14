@@ -13,7 +13,7 @@ html {
   margin: auto;
   display: flex;
   flex-direction: column;
-  color: rgb(26, 91, 84);
+  color: #295b54;
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 12px;
@@ -32,8 +32,8 @@ html {
   flex-direction: columns;
   border-radius: 20px;
   background-color: #ffffff;
-  width: 800px;
-  height: 400px;
+  width: 900px;
+  height: 450px;
   position: absolute;
   top:0;
   bottom: 0;
@@ -44,20 +44,41 @@ html {
 
 .screen {
   //align-items: center;
-  position: absolute;
-  top:0;
-  bottom: 0px;
-  left: 50%;
-  right: 0;
-  border-radius: 0 20px 20px 0;
-  background-color: rgb(26, 91, 84);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  border-radius: 25px;
+  background-color: #295b54;
   color: white;
   width: 50%;
   flex-basis: 50%;
+  margin: 30px;
+
+
+  .screen-tip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .screen-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .touches {
-
+  display: flex;
+  flex-direction: column ;
+  position: relative;
+  border-radius: 25px;
+  background-color: white;
+  color: white;
+  width: 50%;
+  flex-basis: 50%;
+  margin: 30px;
+  border: solid black;
 }
 
 

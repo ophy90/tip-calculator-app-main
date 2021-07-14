@@ -43,11 +43,11 @@ const Calculator = (props) => {
 
             <div className = "calculator">
                 <div className = "touches">
-                    <div className = "touches">
+                    <div className = "bill">
                         <label>Bill</label>
                         <input value={bill} onChange={handleChange(setBill)}/>
                     </div>
-                    <div>
+                    <div className = "choose-tip">
                         <label>Select Tip</label>
                         <div>
                             <button>5%</button>
@@ -64,12 +64,28 @@ const Calculator = (props) => {
                     </div>
                 </div>
                 <div className = "screen">
-                    <p>Tip Amount</p>
-                    <p>/person</p>
-                    <h1>$ {tipAmount}</h1>
-                    <p>Total</p>
-                    <p>/person</p>
-                    <h1>$ {total}</h1>
+                    <div className = "screen-tip">
+                        <div className = "screen-description-tip">
+                            <p>Tip Amount</p>
+                            <p>/person</p>
+                        </div>
+                        <div className = "screen-amount-tip">
+                            <h1 >$ {tipAmount}</h1>
+                        </div>
+                    </div>
+                    <div className = "screen-total">
+                        <div className = "screen-description-total">
+                            <p>Total</p>
+                            <p>/person</p>
+                        </div>
+                        <div className = "amount-total">
+                            <h1>$ {total}</h1>
+                        </div>
+                    </div>
+                    <div>
+                        <button className="reset">RESET</button>
+                    </div>
+
                 </div>
             </div>
             <div className="container">
