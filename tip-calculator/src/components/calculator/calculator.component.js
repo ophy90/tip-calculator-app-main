@@ -43,23 +43,25 @@ const Calculator = (props) => {
 
             <div className = "calculator">
                 <div className = "touches">
-                    <label>Bill</label>
-                    <input value={bill} onChange={handleChange(setBill)}/>
-                </div>
-                <div>
-                    <label>Select Tip</label>
-                    <div>
-                        <button>5%</button>
-                        <button>10%</button>
-                        <button>15%</button>
-                        <button>25%</button>
-                        <button>50%</button>
-                        <input placeholder = "Custom" value={tipPercent} onChange={handleChange(setTipPercent)}/>
+                    <div className = "touches">
+                        <label>Bill</label>
+                        <input value={bill} onChange={handleChange(setBill)}/>
                     </div>
-                </div>
-                <div>
-                    <label>Number of People</label>
-                    <input type= "number" value={amountPeople} onChange={handleChange(setAmountPeople) }/>
+                    <div>
+                        <label>Select Tip</label>
+                        <div>
+                            <button>5%</button>
+                            <button>10%</button>
+                            <button>15%</button>
+                            <button>25%</button>
+                            <button>50%</button>
+                            <input placeholder = "Custom" value={tipPercent} onChange={handleChange(setTipPercent)}/>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Number of People</label>
+                        <input type= "number" value={amountPeople} onChange={handleChange(setAmountPeople) }/>
+                    </div>
                 </div>
                 <div className = "screen">
                     <p>Tip Amount</p>

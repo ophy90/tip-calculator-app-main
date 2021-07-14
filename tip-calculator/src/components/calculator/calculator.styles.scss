@@ -43,7 +43,17 @@ html {
 }
 
 .screen {
-
+  //align-items: center;
+  position: absolute;
+  top:0;
+  bottom: 0px;
+  left: 50%;
+  right: 0;
+  border-radius: 0 20px 20px 0;
+  background-color: rgb(26, 91, 84);
+  color: white;
+  width: 50%;
+  flex-basis: 50%;
 }
 
 .touches {
