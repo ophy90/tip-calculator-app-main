@@ -6,7 +6,7 @@ const Calculator = (props) => {
     const [bill, setBill] = useState(0);
     const [tipPercent, setTipPercent] = useState(0);
     const [tipAmount, setTipAmount] = useState(0);
-    const [amountPeople, setAmountPeople] = useState(0);
+    const [amountPeople, setAmountPeople] = useState(1);
     const [total, setTotal] = useState(0)
 
 
@@ -43,13 +43,13 @@ const Calculator = (props) => {
 
             <div className = "calculator">
                 <div className = "touches">
-                    <div className = "bill">
+                    <div className = "touches-bill">
                         <label>Bill</label>
                         <input value={bill} onChange={handleChange(setBill)}/>
                     </div>
-                    <div className = "choose-tip">
+                    <div className = "touches-tip">
                         <label>Select Tip</label>
-                        <div>
+                        <div className = "touches-choose-tip">
                             <button>5%</button>
                             <button>10%</button>
                             <button>15%</button>
@@ -58,7 +58,7 @@ const Calculator = (props) => {
                             <input placeholder = "Custom" value={tipPercent} onChange={handleChange(setTipPercent)}/>
                         </div>
                     </div>
-                    <div>
+                    <div className = "touches-amount-people">
                         <label>Number of People</label>
                         <input type= "number" value={amountPeople} onChange={handleChange(setAmountPeople) }/>
                     </div>

@@ -71,6 +71,7 @@ html {
 .touches {
   display: flex;
   flex-direction: column ;
+  justify-content: space-evenly;
   position: relative;
   border-radius: 25px;
   background-color: white;
@@ -79,6 +80,15 @@ html {
   flex-basis: 50%;
   margin: 30px;
   border: solid black;
+  .touches-bill {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+  }
+}
+
+label {
+  color: black;
 }
 
 
