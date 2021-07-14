@@ -32,12 +32,15 @@ const Calculator = (props) => {
 
     return (
         <>
-            <div className="title first-line">
-                SPLI
+            <div className="title">
+                <div className="first-line">
+                    SPLI
+                </div>
+                <div className="second-line">
+                    TTER
+                </div>
             </div>
-            <div className="title second-line">
-                TTER
-            </div>
+
             <div className = "calculator">
                 <div className = "touches">
                     <label>Bill</label>
