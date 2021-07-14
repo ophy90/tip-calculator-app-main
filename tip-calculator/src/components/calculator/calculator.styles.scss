@@ -1,11 +1,34 @@
+// position of blue container
 * {
-  //height: 100vh;
-  //width: 100vh;
-  //position: relative;
+  background-color: #C5E4E6;
 }
 
 .container {
-  background-color: #C5E4E6;
+}
+
+//Title split on 2 lines
+.title {
+  color: rgb(26, 91, 84);
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 12px;
+  transform: scaleX(.9);
+}
+
+.first-line {
+  margin-top: 150px;
+  margin-bottom: 5px;
+}
+
+.second-line {
+}
+
+// Calculator
+
+.calculator {
+  display: flex;
+  border-radius: 20px;
+  background-color: #ffffff;
   width: 800px;
   height: 400px;
   position: absolute;
@@ -14,5 +37,8 @@
   left: 0;
   right: 0;
   margin: auto;
-  }
+}
+
+
+
 

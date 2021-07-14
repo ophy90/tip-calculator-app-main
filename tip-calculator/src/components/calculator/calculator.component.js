@@ -32,8 +32,14 @@ const Calculator = (props) => {
 
     return (
         <>
-            <div className="container">
-                <div>
+            <div className="title first-line">
+                SPLI
+            </div>
+            <div className="title second-line">
+                TTER
+            </div>
+            <div>
+                <div className = "calculator">
                     <label>Bill</label>
                     <input value={bill} onChange={handleChange(setBill)}/>
                 </div>
@@ -52,7 +58,6 @@ const Calculator = (props) => {
                     <label>Number of People</label>
                     <input type= "number" value={amountPeople} onChange={handleChange(setAmountPeople) }/>
                 </div>
-
                 <div>
                     <p>Tip Amount</p>
                     <p>/person</p>
@@ -61,6 +66,8 @@ const Calculator = (props) => {
                     <p>/person</p>
                     <h1>$ {total}</h1>
                 </div>
+            </div>
+            <div className="container">
             </div>
         </>
     );
