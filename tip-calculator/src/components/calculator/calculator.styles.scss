@@ -1,9 +1,6 @@
 // position of blue container
-* {
+html {
   background-color: #C5E4E6;
-}
-
-.container {
 }
 
 //Title split on 2 lines
@@ -16,17 +13,28 @@
 }
 
 .first-line {
-  margin-top: 150px;
-  margin-bottom: 5px;
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .second-line {
+  position: absolute;
+  top: 130px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 // Calculator
 
 .calculator {
   display: flex;
+  flex-direction: columns;
   border-radius: 20px;
   background-color: #ffffff;
   width: 800px;
@@ -37,6 +45,14 @@
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.screen {
+
+}
+
+.touches {
+
 }
 
 

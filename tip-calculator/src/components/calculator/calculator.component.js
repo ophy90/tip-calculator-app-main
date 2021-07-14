@@ -38,8 +38,8 @@ const Calculator = (props) => {
             <div className="title second-line">
                 TTER
             </div>
-            <div>
-                <div className = "calculator">
+            <div className = "calculator">
+                <div className = "touches">
                     <label>Bill</label>
                     <input value={bill} onChange={handleChange(setBill)}/>
                 </div>
@@ -58,7 +58,7 @@ const Calculator = (props) => {
                     <label>Number of People</label>
                     <input type= "number" value={amountPeople} onChange={handleChange(setAmountPeople) }/>
                 </div>
-                <div>
+                <div className = "screen">
                     <p>Tip Amount</p>
                     <p>/person</p>
                     <h1>$ {tipAmount}</h1>
