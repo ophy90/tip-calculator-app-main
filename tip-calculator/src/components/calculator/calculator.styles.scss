@@ -55,7 +55,6 @@ html {
   flex-basis: 50%;
   margin: 30px;
 
-
   .screen-tip {
     display: flex;
     flex-direction: row;
@@ -82,13 +81,40 @@ html {
   border: solid black;
   .touches-bill {
     display: flex;
-    flex-direction: row ;
+    flex-direction: column ;
     justify-content: space-evenly;
+    margin: 5px;
+
+  }
+  .touches-tip {
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    margin: 5px;
+      .touches-choose-tip {
+        flex-basis: 50px;
+        button {
+          width: 100px;
+          margin: 5px;
+        }
+      }
+  }
+  .touches-amount-people {
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    margin: 5px;
   }
 }
 
 label {
   color: black;
+  text-align: start;
+}
+
+input {
+  width: 100px;
+  text-align: end;
 }
 
 
