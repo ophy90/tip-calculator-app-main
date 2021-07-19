@@ -47,10 +47,11 @@ const Calculator = (props) => {
                 <div className = "touches">
                     <div className = "touches-bill">
                         <label>Bill</label>
+                        <i className="fas fa-dollar-sign"></i>
                         <input value={bill} onChange={handleChange(setBill)}/>
                     </div>
                     <div className = "touches-tip">
-                        <label>Select Tip</label>
+                        <label>Select Tip %</label>
                         <div className = "touches-choose-tip">
                             <button>5%</button>
                             <button>10%</button>
