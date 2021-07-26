@@ -3,13 +3,14 @@ import './App.css';
 
 
 import Calculator from './components/calculator/calculator.component'
+import Slot from './components/Slot/slot.component'
 
 
 function App() {
   return (
-    <div className="App">
-      <Calculator/>
-    </div>
+        <div className="App">
+          <Slot/>
+        </div>
   );
 }
 
