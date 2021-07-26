@@ -84,7 +84,15 @@ html {
     flex-direction: column ;
     justify-content: space-evenly;
     margin: 5px;
-
+    .touches-bill-icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .fa-dollar-sign {
+        font-size: 18px;
+        color: rgb(170, 196, 196);
+      }
+    }
   }
   .touches-tip {
     display: flex;
@@ -104,8 +112,19 @@ html {
     flex-direction: column ;
     justify-content: space-evenly;
     margin: 5px;
+    .touches-people-icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+        .fa-user{
+          font-size: 18px;
+          color: rgb(170, 196, 196);
+        }
+    }
   }
 }
+
+
 
 label {
   color: black;
@@ -116,7 +135,4 @@ input {
   width: 100px;
   text-align: end;
 }
-
-
-
 

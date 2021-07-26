@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 
 import './calculator.styles.scss';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Calculator = (props) => {
@@ -47,8 +46,10 @@ const Calculator = (props) => {
                 <div className = "touches">
                     <div className = "touches-bill">
                         <label>Bill</label>
-                        <i className="fas fa-dollar-sign"></i>
-                        <input value={bill} onChange={handleChange(setBill)}/>
+                        <div className = "touches-bill-icon">
+                            <i className="fas fa-dollar-sign"/>
+                            <input value={bill} onChange={handleChange(setBill)}/>
+                        </div>
                     </div>
                     <div className = "touches-tip">
                         <label>Select Tip %</label>
@@ -63,8 +64,8 @@ const Calculator = (props) => {
                     </div>
                     <div className = "touches-amount-people">
                         <label>Number of People</label>
-                        <div className="touches-bill-icon">
-                            <i className="fas fa-user"></i>
+                        <div className="touches-people-icon">
+                            <i className="fas fa-user"/>
                             <input type= "number" value={amountPeople} onChange={handleChange(setAmountPeople) }/>
                         </div>
                     </div>
